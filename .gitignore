@@ -50,3 +50,14 @@ main.js.map
 
 .idea
 npm-debug.log.*
+
+editor.worker.js
+css.worker.js
+css.worker.js.map
+editor.worker.js.map
+html.worker.js
+html.worker.js.map
+json.worker.js
+json.worker.js.map
+typescript.worker.js.map
+typescript.worker.js

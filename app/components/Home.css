@@ -1,4 +1,3 @@
-
 .container {
   height: 100vh;
 }
@@ -12,15 +11,14 @@
   float: left;
   width: 50px;
   height: 100vh;
-  overflow-y:auto;
-  overflow-x:hidden;
-  background-color: #CCCACA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #cccaca;
 }
 
 .menu_item {
   width: 100%;
 }
-
 
 .menu_item_icon {
   margin-left: auto;
@@ -34,18 +32,18 @@
   float: left;
   width: 200px;
   height: 100vh;
-  overflow-y:auto;
-  overflow-x:hidden;
-  background-color:red;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: red;
 }
 
 .second_editor {
   float: left;
   width: 100%;
   height: 100vh;
-  overflow-y:auto;
-  overflow-x:hidden;
-  background-color: #EAEAEA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #eaeaea;
 }
 
 .second_editor_content {
@@ -55,7 +53,7 @@
 .second_editor_title {
   height: 30px;
   width: 100%;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
 }
 
 .second_editor_title span {
@@ -67,7 +65,7 @@
 .second_editor_section_title {
   height: 20px;
   width: 100%;
-  background-color: #C1C1C1;
+  background-color: #c1c1c1;
 }
 
 .second_editor_section_title span {
@@ -82,27 +80,30 @@
 
 .main_content {
   height: 100vh;
-  overflow-y:hidden;
-  overflow-x:hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   margin: auto;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .action_container {
   height: 45px;
   background-color: white;
+
   /* margin: 5px; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end
+  justify-content: flex-end;
+
   /* float: left; 为了让剩余的部分自动占满 */
 }
 
 .action_button {
   display: flex;
   margin-right: 15px;
+
   /* align-items: center; */
 }
 
@@ -127,7 +128,7 @@
   align-items: center;
   height: 30px;
   width: 100%;
-  background-color: #B4B4B4;
+  background-color: #b4b4b4;
   z-index: 999;
 }
 
@@ -142,12 +143,12 @@
   width: 100%;
 }
 
-
 .translation_window {
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow-y: auto;
+
+  /* overflow-y: hidden; */
 }
 
 .translation_editor {
@@ -155,5 +156,5 @@
   flex: 1;
   margin-top: 30px !important;
   width: 100%;
-  background-color: red;
+  background-color: #1e1e1e;
 }

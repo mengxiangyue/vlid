@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon, Tree, Button, Breadcrumb, Input } from 'antd';
 import Resizable from 're-resizable';
+import MonacoEditor from 'react-monaco-editor';
 import Diff from "./Diff";
 import routes from '../constants/routes';
 import styles from './Home.css';
@@ -21,6 +22,23 @@ const style = {
 };
 export default class Home extends Component<Props> {
   props: Props;
+
+  editorDidMount(editor, monaco) {
+    console.log('editorDidMount', editor);
+    editor.focus();
+    // editor.layout();
+    // setTimeout(() => {
+    //   editor.layout()
+    // }, 100);
+  }
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate');
+    // setTimeout(() => {
+    //   this.refs.monaco.editor.layout()
+    // }, 100);
+    
+  }
 
   render() {
     return (
@@ -113,7 +131,23 @@ export default class Home extends Component<Props> {
                   <Breadcrumb.Item>An Application</Breadcrumb.Item>
                 </Breadcrumb>,
               </div>
-              <TextArea rows={4} className={styles.translation_editor} />
+              <div className={styles.translation_editor}>
+                <MonacoEditor
+                  width="100%"
+                  // height="700"
+                  language="javascript"
+                  theme="vs-dark"
+                  value={"tddffdfdfdf"}
+                  options={{
+                    selectOnLineNumbers: true,
+                    automaticLayout: true
+                  }}
+                  // onChange={::this.onChange}
+                  editorDidMount={::this.editorDidMount}
+                />
+              </div>
+              
+              {/* <TextArea rows={4} className={styles.translation_editor} /> */}
             </div>
           </div>
         </div>

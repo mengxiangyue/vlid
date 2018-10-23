@@ -64,7 +64,13 @@ export default merge.smart(baseConfig, {
               sourceMap: true
             }
           }
-        ]
+        ],
+        exclude:[path.resolve(__dirname, '..', 'node_modules/monaco-editor')]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        include:[path.resolve(__dirname, '..', 'node_modules/monaco-editor')]
       },
       // Add SASS support  - compile all .global.scss files and pipe it to style.css
       {
