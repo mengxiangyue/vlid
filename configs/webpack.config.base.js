@@ -72,6 +72,8 @@ export default {
       NODE_ENV: 'production'
     }),
     new webpack.NamedModulesPlugin(),
-    new MonacoWebpackPlugin()
+    new MonacoWebpackPlugin({
+      "output":"app/dist/monaco"
+    })
   ]
 };
