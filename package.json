@@ -239,6 +239,7 @@
     "devtron": "^1.4.0",
     "diff2html": "^2.4.0",
     "electron-debug": "^2.0.0",
+    "fs-extra": "^7.0.0",
     "history": "^4.7.2",
     "monaco-editor-webpack-plugin": "^1.5.4",
     "re-resizable": "^4.9.1",
